@@ -41,7 +41,7 @@ for (var i = 0; i < datesListConverted.length; i++) {
 	console.log(datesListConverted[i]);
 }
 
-//converting input string to a float listOfLists
+//converting input string into a float listOfLists
 countList = countList.toString(2);
 countList = countList.split("*");
 for (var i = 0; i < countList.length; i++) {

@@ -35,24 +35,23 @@
     <!-- Custom styles for this template -->
     <link th:href="@{/css/signin.css}" rel="stylesheet">
   </head>
-  <body class="text-center">
+  	<body class="text-center">
     
-<main class="form-signin">
-  <form name="f" th:action="@{/login}" method="post">
-    <img class="mb-4" src="images/logo.jpg" alt="hui" width="200" height="200">
-    <h1 class="h3 mb-3 fw-normal">Please enter:</h1>
-    <input type="text" id="username" name="username" class="form-control" placeholder="Username" required>
-    <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
-    <div class="btn-group">
-  		<button type="submit" class="btn btn-primary active" aria-current="page">Sign in</button>
-  		<a th:href="@{/register}" class="btn btn-primary">Sign up</a>
-	</div>
-  </form>
-  	<br/>
-	<p class="mt-5 mb-3 text-muted">&copy; 2021</p>
-</main>
+		<main class="form-signin">
+			  <form name="f" th:action="@{/login}" method="post">
+			    <img class="mb-4" src="images/logo.jpg" alt="hui" width="200" height="200">
+			    <h1 class="h3 mb-3 fw-normal">Please enter:</h1>
+			    <input id="login" type="text" id="username" name="username" class="form-control" placeholder="Username" required>
+			    <input id="pass" type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+			    <div class="btn-group">
+			  		<button type="submit" class="btn btn-primary active" aria-current="page">Sign in</button>
+			  		<a th:href="@{/register}" class="btn btn-primary">Sign up</a>
+				</div>
+			  </form>
+			  	<br/>
+				<p class="mt-5 mb-3 text-muted">&copy; 2021</p>
+		</main>
 
 
-    
-  </body>
+	</body>
 </html>

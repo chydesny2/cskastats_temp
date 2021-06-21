@@ -17,7 +17,16 @@ public class UserAccountService {
 		return uRepo.findAll();
 	}
 	
+	
+	public UserAccount findByEmail(String email) {
+		return uRepo.findByEmail(email);
+	}
+	
 	public void save(UserAccount useraccount) {
 		uRepo.save(useraccount);
+	}
+	
+	public UserAccount findByUserName(String username) {
+		return uRepo.findByUserName(username);
 	}
 }

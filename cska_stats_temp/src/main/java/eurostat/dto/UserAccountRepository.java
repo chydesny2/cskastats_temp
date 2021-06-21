@@ -14,5 +14,10 @@ import eurostat.entities.UserAccount;
 public interface UserAccountRepository extends PagingAndSortingRepository<UserAccount, Long>{
 	
 	@Override
-	List<UserAccount> findAll();
+	public List<UserAccount> findAll();
+	
+	public UserAccount findByEmail(String email);
+	
+	public UserAccount findByUserName(String username);
+
 }
